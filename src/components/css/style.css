@@ -1,0 +1,125 @@
+/* WeatherApp.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #74b9ff, #0984e3); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .weather-app {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .header {
+    background-color: #3498db;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeInUp 0.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .input input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .content {
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  .location h2 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .location p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .weather-card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  .weather-card h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .weather-card p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .icon {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    animation: bounce 1s infinite alternate; /* Bounce animation */
+  }
+  
+  /* Add hover effect for better interactivity */
+  .weather-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
